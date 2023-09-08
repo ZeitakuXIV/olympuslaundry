@@ -128,7 +128,7 @@
             this.label1.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label1.Location = new System.Drawing.Point(209, 381);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 54);
+            this.label1.Size = new System.Drawing.Size(146, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "WELCOME!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,9 +140,8 @@
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.Location = new System.Drawing.Point(170, 566);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(351, 28);
+            this.password.Size = new System.Drawing.Size(351, 19);
             this.password.TabIndex = 6;
-            this.password.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // username
             // 
@@ -150,7 +149,7 @@
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.Location = new System.Drawing.Point(170, 485);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(351, 28);
+            this.username.Size = new System.Drawing.Size(351, 19);
             this.username.TabIndex = 7;
             // 
             // exit
@@ -158,7 +157,7 @@
             this.exit.BackColor = System.Drawing.Color.RoyalBlue;
             this.exit.FlatAppearance.BorderSize = 0;
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Location = new System.Drawing.Point(577, -2);
             this.exit.Name = "exit";
@@ -170,8 +169,8 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(623, 745);
             this.Controls.Add(this.exit);
