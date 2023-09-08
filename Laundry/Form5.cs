@@ -54,12 +54,25 @@ namespace Laundry
 
         }
 
+<<<<<<< HEAD
         private void Form5_Load(object sender, EventArgs e)
+=======
+        private void pictureBox1_Click(object sender, EventArgs e)
+>>>>>>> origin/main
         {
 
         }
 
+<<<<<<< HEAD
         private void print_Click(object sender, EventArgs e)
+=======
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+>>>>>>> origin/main
         {
 
         }
