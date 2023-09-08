@@ -56,11 +56,6 @@ namespace Laundry
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
 
@@ -91,7 +86,7 @@ namespace Laundry
         private void login_Click(object sender, EventArgs e)
         {
             string namaPengguna = username.Text;
-            string kataSandi = pass.Text;
+            string kataSandi = password.Text;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
