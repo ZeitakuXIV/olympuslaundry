@@ -31,5 +31,10 @@ namespace Laundry
         {
 
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
