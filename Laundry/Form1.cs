@@ -99,6 +99,9 @@ namespace Laundry
 
                 if (hashedPassword != null && BCrypt.Net.BCrypt.Verify(kataSandi, hashedPassword))
                 {
+                    Form5 dashboard = new Form5();
+                    dashboard.Show();
+                    this.Hide();
                     MessageBox.Show("Login berhasil!");
                     // Add code to grant access to your application here.
                 }
@@ -107,6 +110,13 @@ namespace Laundry
                     MessageBox.Show("Login gagal. Coba lagi.");
                 }
             }
+        }
+        private bool IsValidLogin(string username, string password)
+        {
+            // Lakukan validasi login di sini, seperti memeriksa ke database atau sumber autentikasi lainnya
+            // Jika login valid, kembalikan true, jika tidak, kembalikan false
+            // Contoh sederhana:
+            return (username == "admin" && password == "password");
         }
 
         private void reset_Click(object sender, EventArgs e)
