@@ -68,23 +68,6 @@ namespace Laundry
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-            f5.Show();
-        }
-        
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void login_Click(object sender, EventArgs e)
-        {
             string namaPengguna = username.Text;
             string kataSandi = password.Text;
 
@@ -101,8 +84,9 @@ namespace Laundry
                 {
                     Form5 dashboard = new Form5();
                     dashboard.Show();
-                    this.Hide();
                     MessageBox.Show("Login berhasil!");
+                    this.Hide();
+
                     // Add code to grant access to your application here.
                 }
                 else
@@ -110,6 +94,22 @@ namespace Laundry
                     MessageBox.Show("Login gagal. Coba lagi.");
                 }
             }
+        }
+        
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            
         }
         private bool IsValidLogin(string username, string password)
         {
