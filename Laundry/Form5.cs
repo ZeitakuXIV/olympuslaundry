@@ -99,7 +99,28 @@ namespace Laundry
 
         private void exit_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            f3.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
         }
     }
 }
