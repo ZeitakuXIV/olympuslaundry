@@ -63,10 +63,28 @@ namespace Laundry
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            Form5 f5 = new Form5();
+            f5.Show();
+            this.Hide();
+        }
+        
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void login_Click(object sender, EventArgs e)
         {
             string namaPengguna = username.Text;
             string kataSandi = password.Text;
@@ -122,6 +140,26 @@ namespace Laundry
         private void reset_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void reset_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
