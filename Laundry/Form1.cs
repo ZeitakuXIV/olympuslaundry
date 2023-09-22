@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BCrypt.Net;
+//using BCrypt.Net;
 
-namespace Laundry
-{
+namespace Laundry {
+
     public partial class Form1 : Form
     {
         private string connectionString = "Data Source=DESKTOP-Dlan\\SQLEXPRESS;Initial Catalog=db_laundry;Integrated Security=True";
@@ -89,7 +89,7 @@ namespace Laundry
             string namaPengguna = username.Text;
             string kataSandi = password.Text;
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            /* using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 string query = "SELECT password FROM Admin WHERE username = @username";
@@ -110,7 +110,7 @@ namespace Laundry
                 {
                     MessageBox.Show("Login gagal. Coba lagi.");
                 }
-            }
+            } */
         }
         private bool IsValidLogin(string username, string password)
         {
