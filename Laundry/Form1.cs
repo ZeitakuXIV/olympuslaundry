@@ -68,11 +68,36 @@ namespace Laundry {
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
-            f5.Show();
-            this.Hide();
+            //Form5 f5 = new Form5();
+            //f5.Show();
+            //this.Hide();
+            string namaPengguna = username.Text;
+            string kataSandi = password.Text;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string query = "SELECT password FROM Admin WHERE username = @username";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@username", namaPengguna);
+
+                string hashedPassword = (string)command.ExecuteScalar();
+
+                if (hashedPassword != null && BCrypt.Net.BCrypt.Verify(kataSandi, hashedPassword))
+                {
+                    Form5 dashboard = new Form5();
+                    dashboard.Show();
+                    this.Hide();
+                    MessageBox.Show("Login berhasil!");
+                    // Add code to grant access to your application here.
+                }
+                else
+                {
+                    MessageBox.Show("Login gagal. Coba lagi.");
+                }
+            }
         }
-        
+
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
